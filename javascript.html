@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Management</title>
+
+  <link rel="stylesheet" href="./javascript.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Student Online Result Management</h1>
+
+    <!-- FORM -->
+    <div class="form">
+
+      <input type="text"
+             id="name"
+             placeholder="Enter Student Name">
+
+      <input type="text"
+             id="course"
+             placeholder="Enter Course">
+
+      <input type="number"
+             id="marks"
+             placeholder="Enter Marks">
+
+      <button onclick="addStudent()">
+        Add Result
+      </button>
+
+    </div>
+
+    <!-- TABLE -->
+    <table>
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Marks</th>
+          <th>Grade</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody id="resultBody">
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script src="./javascript.js"></script>
+
+</body>
+</html>
